@@ -1,9 +1,19 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 border-t border-gray-800">
-      <div className="max-w-3xl mx-auto">
+    <section id="about" className="py-24 px-6 border-t border-gray-800/50">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-3xl mx-auto"
+      >
         <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">About</p>
-        <h2 className="text-4xl font-bold text-white mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
           The path so far.
         </h2>
         <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
@@ -31,7 +41,7 @@ export default function About() {
             and stay calm when systems aren&apos;t behaving.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
