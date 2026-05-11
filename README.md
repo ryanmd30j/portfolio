@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ryan D'Souza — Portfolio
 
-## Getting Started
+A personal portfolio site built from scratch with Next.js, TypeScript, and Tailwind CSS. Features a responsive design, scroll animations, and a working contact form powered by a custom API route and Resend.
 
-First, run the development server:
+🔗 **Live site:** [portfolio-rust-eta-35.vercel.app](https://portfolio-rust-eta-35.vercel.app)
+
+---
+
+## About
+
+I'm an MSc Computer Science student at Manchester Metropolitan University, currently achieving Distinction-level grades, building toward a career in DevOps and security engineering. My MSc dissertation is on automated security fuzzing in CI/CD pipelines.
+
+This site is my personal home on the web — somewhere to point recruiters, collaborators, and anyone curious about my work.
+
+---
+
+## Features
+
+- **Component-based architecture** — Next.js App Router with clean separation between `Navbar`, `Hero`, `About`, `Projects`, and `Contact`
+- **Server-side API route** at `/api/contact` with full input validation
+- **Working contact form** — fetches into the API route, validates server-side, sends email via Resend, with loading/success/error states
+- **Smooth scroll animations** with Framer Motion (fades in as you scroll past each section)
+- **Responsive design** — mobile-first, scales cleanly to desktop
+- **Tech icons** on project cards (react-icons)
+- **Environment variables** for secrets (no API keys in source)
+- **Auto-deployed to Vercel** on every push to `main`
+
+---
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Framework | Next.js 16 (App Router, Turbopack) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Icons | react-icons |
+| Email | Resend |
+| Hosting | Vercel |
+| Version control | Git + GitHub |
+
+---
+
+## Local development
+
+Clone the repo, install dependencies, and start the dev server:
 
 ```bash
+git clone https://github.com/ryanmd30j/portfolio.git
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The contact form requires a Resend API key. Create a `.env.local` file in the project root
+---
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+- **LinkedIn:** [linkedin.com/in/ryan-d-souza-59206a254](https://www.linkedin.com/in/ryan-d-souza-59206a254/)
+- **GitHub:** [github.com/ryanmd30j](https://github.com/ryanmd30j)
+- **Portfolio:** [portfolio-rust-eta-35.vercel.app](https://portfolio-rust-eta-35.vercel.app)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by Ryan D'Souza, 2026. Open to graduate roles in Software Engineering, DevOps, Site Reliability, and Security Engineering.
