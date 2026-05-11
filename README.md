@@ -10,7 +10,7 @@ A personal portfolio site built from scratch with Next.js, TypeScript, and Tailw
 
 I'm an MSc Computer Science student at Manchester Metropolitan University, currently achieving Distinction-level grades, building toward a career in DevOps and security engineering. My MSc dissertation is on automated security fuzzing in CI/CD pipelines.
 
-This site is my personal home on the web — somewhere to point recruiters, collaborators, and anyone curious about my work.
+This site is my personal home on the web somewhere to point recruiters, collaborators, and anyone curious about my work.
 
 ---
 
